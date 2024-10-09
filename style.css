@@ -1,0 +1,107 @@
+#container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+/* displaying everything in the container as a grid, separated in 2/3 for the main, and 1/3 for the aside */
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Left the header and the menu as a separate div to avoid them also being split into the grid */
+#menu {
+    width: 900px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+#content {
+    padding: 1rem;
+}
+
+header {
+    padding: 0.5rem;
+}
+
+/* DISCLAIMER */
+/* First of all, I do apologise if this image is a bit too much, I tried to look for one with just silhouettes and also blurred, but it just fit so perfectly with the theme that I had to use it */
+
+/* sets the image as background for the body, while the background for the container part is whitesmoke so the text is easily readable */
+/* fixed the background image, also used no-repeat and made the background of the image black to better fit the theme */
+body {
+    background-image: url(./images/forest\ of\ corpses.jpeg);
+    background-position: top;
+    background-size: auto;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Made the menu as an unordered list, links in white, displayed inline and with ther background colour as crimson to better fit the rest */
+nav li {
+    list-style: none;
+    padding: 0.6rem;
+    display: inline-block;
+}
+
+nav {
+    background-color: crimson;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Made the aside as boxes 1px, solid; same thing with the list style and links, except they turn crimson when hovered  */
+aside li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: crimson;
+}
+
+aside div {
+    padding: 1rem;
+    border: 1px solid #BFACB5;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: crimson;
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer {
+    background-color: #5a5a5a;
+    padding: 0.5rem;
+    width: 900px;
+    margin: 0 auto;
+}
